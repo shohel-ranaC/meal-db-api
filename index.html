@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Meal Restaurant</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center text-5xl font-bold text-lime-500 mt-8">
+        Meal Awesome Restaurant
+      </h1>
+    </header>
+    <section>
+      <div class="text-center mt-10">
+        <input
+          id="input"
+          class="border-2 border-pink-500 py-2 rounded-md focus: outline-none px-3"
+          type="text"
+          placeholder="Input meal item........."
+        />
+        <button
+          class="bg-pink-500 text-white py-2.5 px-7 rounded-md"
+          onclick="searchItem()"
+        >
+          Search
+        </button>
+      </div>
+    </section>
+    <section>
+      <div
+        id="card-container"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-14"
+      ></div>
+    </section>
+    <!-- script  -->
+    <script src="js/meal.js"></script>
+  </body>
+</html>
